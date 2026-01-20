@@ -5,8 +5,8 @@ let participants = [];
 let defaultTime = 3; // minutos
 
 // Configuración del proyecto (REEMPLAZAR con tus valores)
-const CLOUD_PROJECT_NUMBER = 'YOUR_PROJECT_NUMBER';
-const MAIN_STAGE_URL = 'https://YOUR_DOMAIN.com/main-stage.html';
+const CLOUD_PROJECT_NUMBER = 'timeboxinsider';
+const MAIN_STAGE_URL = 'https://carlosypah.github.io/main-stage.html';
 
 // Inicialización cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {

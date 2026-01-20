@@ -5,7 +5,7 @@ let participants = [];
 let defaultTime = 3;
 
 // Configuración del proyecto (REEMPLAZAR con tus valores)
-const CLOUD_PROJECT_NUMBER = 'YOUR_PROJECT_NUMBER';
+const CLOUD_PROJECT_NUMBER = 'timeboxinsider';
 
 // Inicialización cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {

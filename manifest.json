@@ -6,9 +6,9 @@
     },
     "meet": {
       "web": {
-        "sidePanelUri": "https://YOUR_DOMAIN.com/side-panel.html",
-        "mainStageUri": "https://YOUR_DOMAIN.com/main-stage.html",
-        "addOnOrigins": ["https://YOUR_DOMAIN.com"],
+        "sidePanelUri": "https://carlosypah.github.io/side-panel.html",
+        "mainStageUri": "hhttps://carlosypah.github.io/main-stage.html",
+        "addOnOrigins": ["https://carlosypah.github.io"],
         "supportsScreensharing": true
       }
     }
