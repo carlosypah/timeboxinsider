@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 async function initializeMainStage() {
     try {
         // Crear sesión del add-on
-        addonSession = await window.meet.addon.createAddonSession({});
+        addonSession = await window.meet.addon.createAddonSession({
+            cloudProjectNumber: "666770766392"
+        });
         
         // Crear cliente del main stage
         mainStageClient = await addonSession.createMainStageClient();
