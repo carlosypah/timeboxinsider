@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Timer - Escenario Principal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/meetjs/addons/1.1.0/meet.addons.js"></script>
+</head>
+<body class="main-stage">
+    <div class="timer-container">
+        <header class="timer-header">
+            <h1>🕐 Meet Timer</h1>
+            <div class="timer-config">
+                <span>Tiempo por defecto: <span id="defaultTimeDisplay">3</span> min</span>
+            </div>
+        </header>
+
+        <div class="timers-grid" id="timersGrid">
+            <!-- Los timers se cargarán dinámicamente -->
+        </div>
+
+        <div class="controls-section">
+            <button id="pauseAllTimers" class="btn-warning">⏸️ Pausar Todos</button>
+            <button id="resetAllTimers" class="btn-danger">🔄 Reiniciar Todos</button>
+            <button id="addParticipant" class="btn-secondary">👤 Agregar Participante Manual</button>
+        </div>
+
+        <div class="footer">
+            <p>Los timers son visibles para todos los participantes</p>
+        </div>
+    </div>
+
+    <script src="js/main-stage.js"></script>
+</body>
+</html>

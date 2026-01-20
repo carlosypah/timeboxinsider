@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Timer - Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/meetjs/addons/1.1.0/meet.addons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>🕐 Meet Timer</h2>
+            <p>Control de tiempo para presentaciones</p>
+        </header>
+
+        <div class="config-section">
+            <label for="defaultTime">Tiempo por defecto (minutos):</label>
+            <input type="number" id="defaultTime" value="3" min="1" max="30">
+        </div>
+
+        <div class="participants-section">
+            <h3>Participantes</h3>
+            <div id="participantsList" class="participants-list">
+                <!-- Los participantes se cargarán dinámicamente -->
+            </div>
+        </div>
+
+        <div class="actions-section">
+            <button id="startActivity" class="btn-primary">
+                🚀 Iniciar Timer en Pantalla Principal
+            </button>
+            <button id="refreshParticipants" class="btn-secondary">
+                🔄 Actualizar Participantes
+            </button>
+        </div>
+
+        <div class="status-section">
+            <p id="statusMessage">Conectando con Meet...</p>
+        </div>
+    </div>
+
+    <script src="js/side-panel.js"></script>
+</body>
+</html>

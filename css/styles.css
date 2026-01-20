@@ -1,0 +1,322 @@
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f8f9fa;
+    color: #202124;
+    line-height: 1.5;
+}
+
+/* Container principal */
+.container {
+    padding: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Header */
+header h2 {
+    color: #1a73e8;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+header p {
+    color: #5f6368;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Secciones */
+.config-section, 
+.participants-section, 
+.actions-section, 
+.status-section {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+}
+
+/* Configuración */
+.config-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.config-section input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.config-section input:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Lista de participantes */
+.participants-section h3 {
+    margin-bottom: 12px;
+    color: #3c4043;
+    font-size: 16px;
+}
+
+.participants-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.participant-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e8eaed;
+}
+
+.participant-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.participant-name {
+    font-weight: 500;
+    margin-left: 8px;
+    color: #3c4043;
+}
+
+.participant-timer {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.timer-running {
+    color: #137333;
+}
+
+.timer-paused {
+    color: #ea4335;
+}
+
+.timer-overtime {
+    color: #f9ab00;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.5; }
+}
+
+/* Botones */
+.btn-primary, .btn-secondary, .btn-warning, .btn-danger {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 4px;
+}
+
+.btn-primary {
+    background: #1a73e8;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1557b0;
+}
+
+.btn-secondary {
+    background: #f8f9fa;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+}
+
+.btn-secondary:hover {
+    background: #e8eaed;
+}
+
+.btn-warning {
+    background: #f9ab00;
+    color: white;
+}
+
+.btn-warning:hover {
+    background: #e8950e;
+}
+
+.btn-danger {
+    background: #ea4335;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #d33b2c;
+}
+
+.btn-small {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Botones de timer */
+.timer-controls {
+    display: flex;
+    gap: 4px;
+}
+
+/* Status */
+.status-section p {
+    color: #5f6368;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Estilos para Main Stage */
+.main-stage {
+    background: #fff;
+    padding: 24px;
+}
+
+.timer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timer-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #e8eaed;
+}
+
+.timer-header h1 {
+    color: #1a73e8;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.timer-config {
+    color: #5f6368;
+    font-size: 16px;
+}
+
+/* Grid de timers */
+.timers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.timer-card {
+    background: white;
+    border: 2px solid #e8eaed;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(60, 64, 67, 0.15);
+    transition: all 0.3s ease;
+}
+
+.timer-card:hover {
+    box-shadow: 0 4px 12px rgba(60, 64, 67, 0.25);
+}
+
+.timer-card.active {
+    border-color: #1a73e8;
+    background: #f1f5ff;
+}
+
+.timer-card.overtime {
+    border-color: #f9ab00;
+    background: #fffbf0;
+}
+
+.timer-participant-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #3c4043;
+}
+
+.timer-display {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 16px 0;
+    color: #137333;
+}
+
+.timer-display.overtime {
+    color: #f9ab00;
+}
+
+.timer-display.paused {
+    color: #ea4335;
+}
+
+.timer-status {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 16px;
+}
+
+/* Controles */
+.controls-section {
+    text-align: center;
+    margin: 32px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: #5f6368;
+    font-size: 14px;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e8eaed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timer-header h1 {
+        font-size: 24px;
+    }
+    
+    .timers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timer-display {
+        font-size: 36px;
+    }
+    
+    .container {
+        padding: 12px;
+    }
+}

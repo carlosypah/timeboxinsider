@@ -1,0 +1,16 @@
+{
+  "addOns": {
+    "common": {
+      "name": "Meet Timer",
+      "logoUrl": "https://developers.google.com/workspace/add-ons/images/add-on-logo.png"
+    },
+    "meet": {
+      "web": {
+        "sidePanelUri": "https://YOUR_DOMAIN.com/side-panel.html",
+        "mainStageUri": "https://YOUR_DOMAIN.com/main-stage.html",
+        "addOnOrigins": ["https://YOUR_DOMAIN.com"],
+        "supportsScreensharing": true
+      }
+    }
+  }
+}
