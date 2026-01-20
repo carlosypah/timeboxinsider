@@ -5,8 +5,7 @@ let participants = [];
 let defaultTime = 3; // minutos
 
 // Configuración del proyecto (REEMPLAZAR con tus valores)
-const MAIN_STAGE_URL = 'https://carlosypah.github.io/main-stage.html';
-
+const MAIN_STAGE_URL = 'https://carlosypah.github.io/timeboxinsider/main-stage.html';
 // Inicialización cuando se carga la página
 document.addEventListener('DOMContentLoaded', function() {
     initializeAddon();
