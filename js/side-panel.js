@@ -5,7 +5,6 @@ let participants = [];
 let defaultTime = 3; // minutos
 
 // Configuración del proyecto (REEMPLAZAR con tus valores)
-const CLOUD_PROJECT_NUMBER = 'timeboxinsider';
 const MAIN_STAGE_URL = 'https://carlosypah.github.io/main-stage.html';
 
 // Inicialización cuando se carga la página
@@ -21,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function initializeAddon() {
     try {
         // Crear sesión del add-on
-        addonSession = await window.meet.addon.createAddonSession({
-            cloudProjectNumber: CLOUD_PROJECT_NUMBER
-        });
+        addonSession = await window.meet.addon.createAddonSession();
         
         // Crear cliente del panel lateral
         sidePanelClient = await addonSession.createSidePanelClient();
